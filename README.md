@@ -35,20 +35,38 @@ This obtains the most complex design out of all four calculators, since it has t
 ### The Pregnancy Calculator
 Similarly, the UI will look like this as soon as the button to the pregnancy calculator is triggered:
 
-<img width="500" alt="Pregnant" src="https://github.com/user-attachments/assets/50581265-6d55-4976-9abd-631fb5ea6279" />
+><img width="500" alt="Pregnant" src="https://github.com/user-attachments/assets/50581265-6d55-4976-9abd-631fb5ea6279" />
 
-If the BMI calculator is told to have the most complex design, it should be followed by this second candidate, the pregnancy calculator, since it provides five different pregnancy calculating methods via a drop-down menu to choose from based on various pregnancy settings and contexts. Such a feature was successfully achieved using the built-in [JComboBox](https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html) provided by the [Java Swing Library](https://docs.oracle.com/javase%2F8%2Fdocs%2Fapi%2F%2F/index.html?javax/swing/package-summary.html). Inadvertent clicks are handled with an [error log message window](https://www.google.com/url?sa=i&url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fwindows%2Fwin32%2Fuxguide%2Fmess-error&psig=AOvVaw3mWXPpi35QagvSFOWJyTML&ust=1735085156621000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCPC4yoWOv4oDFQAAAAAdAAAAABAE). One big issue here is that it may be hard for users to adhere to the strict format rule when typing the date, so input failure may always happen. Therefore, user's convenience should be one of the key goals our team is working on going forward.
+If the BMI calculator is told to have the most complex design, it should be followed by this second candidate, the pregnancy calculator, since it provides five different pregnancy calculating methods via a drop-down menu to choose from based on various pregnancy settings and contexts. Such a feature was successfully achieved using the built-in [JComboBox](https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html) provided by the [Java Swing Library](https://docs.oracle.com/javase%2F8%2Fdocs%2Fapi%2F%2F/index.html?javax/swing/package-summary.html). Inadvertent clicks are handled with an [error log message window](https://www.google.com/url?sa=i&url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fwindows%2Fwin32%2Fuxguide%2Fmess-error&psig=AOvVaw3mWXPpi35QagvSFOWJyTML&ust=1735085156621000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCPC4yoWOv4oDFQAAAAAdAAAAABAE). Its code-based environment can be navigated using this [path](src/Pregnancy_calculator). One big issue here is that it may be hard for users to adhere to the strict format rule when typing the date, so input failure may always happen. Therefore, user's convenience should be one of the key goals our team is working on going forward.
 ### The One Rep Max Calculator
 Finally, the interface for the One Rep Max Calculator looks like this:
 
 ><img width="500" alt="OneRepMax" src="https://github.com/user-attachments/assets/795591a4-5162-4b15-bb5d-a1835ea8585d" />
 
-This calculator is the most successful in terms of program minimalization and simplification, specifically from around 4 Java classes down to only one class that encapsulates all necessary functionality. This makes it easier for later developers if they intend to enhance its performance. Despite being reduced, it still supports three different weight-lifting calculating methods shown in the demonstration video or the first link provided in the overview section. Invalid non-numerical input is well-handled with informative message displayed down the lower half.
+This calculator is the most successful in terms of program minimalization and simplification, specifically from around 4 Java classes down to only one class that encapsulates all necessary functionality. This makes it easier for later developers if they intend to enhance its performance. Despite being reduced, it still supports three different weight-lifting calculating methods shown in the demonstration video or the first link provided in the overview section. Invalid non-numerical input is well-handled with informative message displayed down the lower half. Its code-based environment can be navigated using this [path](src/OneRepMax).
 ## Set up and execution
-- The first step is to get the [`src.tar`](src.tar) file installed and decompressed.
-    - For the Eclipse Integrated Development Environment, import the `src` folder that has just been decompressed into an already created Java Project. This src folder should be at the same level as the `bin` folder.
-    - For Visual Studio Code, the step is similar.
-- You totally can download individual files, one by one, and then import all the files into an already created `src` folder.
-- The only Java file you need to care about is [`HomePage.java`](src/homepage/HomePage.java), which you need to execute and any other Java file content will automatically be imported into this file. Make sure to put [`BMIDescription.txt`](BMIDescription.txt) at the same level as the `src` and `bin` folders in your Java Project!
+### Step 1: Download and Decompress
+Download the [`src.tar`](src.tar) file and decompress it. This will create a `src` folder containing all the necessary Java files.
+### Step 2: Import the Project
+#### For Eclipse:
+1. Open Eclipse and import the decompressed `src` folder into an existing Java project.
+2. Ensure the `src` folder is at the same level as the `bin` folder within your project structure.
+#### For Visual Studio Code:
+1. Open VS Code and import the `src` folder into your workspace.
+2. Follow similar steps as in Eclipse to ensure the project structure is correct.
+#### Alternative Method:
+If preferred, you can download individual Java files manually and place them into an existing `src` folder within your Java project.
+### Step 3: Execution
+1. Locate the [`HomePage.java`](src/homepage/HomePage.java) file inside [this directory](src/homepage)
+2. Run the [`HomePage.java`](src/homepage/HomePage.java) file as your main entry point. All other Java files will be automatically imported as needed during execution.
+### Important note
+1. File Placement: Place the [`BMIDescription.txt`](BMIDescription.txt) file at the same level as the `src` and `bin` folders in your Java project. This ensures that `HomePage.java` can properly read the file when executed.
+2. Example structure:
+```
+Project/
+├── bin/
+├── src/
+├── BMIDescription.txt
+```
 ## Epilogue
 If you have gotten this far, thank you so much for your attention! I hope that you have gained an 10,000-feet view of what our project looks like. Have a good day, or night! :star_struck:
