@@ -51,4 +51,4 @@ This calculator is the most successful in terms of program minimalization and si
 - You totally can download individual files, one by one, and then import all the files into an already created `src` folder.
 - The only Java file you need to care about is [`HomePage.java`](src/homepage/HomePage.java), which you need to execute and any other Java file content will automatically be imported into this file. Make sure to put [`BMIDescription.txt`](BMIDescription.txt) at the same level as the `src` and `bin` folders in your Java Project!
 ## Epilogue
-If you have gotten this far, thank you so much for your attention! I hope that you have gained an 10,000-feet view of what our project looks like. Have a good day, or night!
+If you have gotten this far, thank you so much for your attention! I hope that you have gained an 10,000-feet view of what our project looks like. Have a good day, or night! :star_struck:
