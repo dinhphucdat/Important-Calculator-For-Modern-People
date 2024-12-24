@@ -35,7 +35,7 @@ This obtains the most complex design out of all four calculators, since it has t
 ### The Pregnancy Calculator
 Similarly, the UI will look like this as soon as the button to the pregnancy calculator is triggered:
 
-<img width="500" alt="BMI" src="https://github.com/user-attachments/assets/42f45020-9f9f-41e0-8e91-15fbece89595" />
+<img width="500" alt="Pregnant" src="https://github.com/user-attachments/assets/50581265-6d55-4976-9abd-631fb5ea6279" />
 
 If the BMI calculator is told to have the most complex design, it should be followed by this second candidate, the pregnancy calculator, since it provides five different pregnancy calculating methods via a drop-down menu to choose from based on various pregnancy settings and contexts. Such a feature was successfully achieved using the built-in [JComboBox](https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html) provided by the [Java Swing Library](https://docs.oracle.com/javase%2F8%2Fdocs%2Fapi%2F%2F/index.html?javax/swing/package-summary.html). Inadvertent clicks are handled with an [error log message window](https://www.google.com/url?sa=i&url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fwindows%2Fwin32%2Fuxguide%2Fmess-error&psig=AOvVaw3mWXPpi35QagvSFOWJyTML&ust=1735085156621000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCPC4yoWOv4oDFQAAAAAdAAAAABAE). One big issue here is that it may be hard for users to adhere to the strict format rule when typing the date, so input failure may always happen. Therefore, user's convenience should be one of the key goals our team is working on going forward.
 ### The One Rep Max Calculator
